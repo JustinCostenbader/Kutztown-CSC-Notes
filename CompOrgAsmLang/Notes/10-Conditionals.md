@@ -49,3 +49,14 @@
   - JNGE: jump if not greater than or equal (same as JL)
   - JLE: jump if less than or equal *(if leftOp <= rightOp)*
   - JNG: jump if not greater (same as JLE)
+
+## Conditional Loop Instructions
+   - LOOPZ and LOOPE
+   - LOOPNZ and LOOPNE
+
+## Conditional Structures
+   - Block-Structured IF Statements
+   - Compound Expressions with AND
+   - Compound Expressions with OR
+   - WHILE loops
+   - Table-Driven Selection
