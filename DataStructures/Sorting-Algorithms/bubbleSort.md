@@ -11,4 +11,12 @@
 - Small sequence
 - Nearly Sorted data
 - Special Situations where an adjacent swap is preferred (data stored on tape or in linked list)
-  
+
+```
+template <class ItemType>
+void bubbleSort(ItemType theArray[], int n)
+{
+  bool sorted = false; // False when swaps occur
+  int pass = 1;
+  while (!sorted && (pass < n))
+```
