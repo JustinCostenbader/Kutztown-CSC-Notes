@@ -13,24 +13,42 @@
 - Special Situations where an adjacent swap is preferred (data stored on tape or in linked list)
 
 ## Illustrated Passes
-### Pass 1
+### Pass 1 - (place largest element in the correct position)
 <table>
 <tr>
-    <td><strong>29</strong></td> <td><strong>10</strong></td> <td>14</td> <td>37</td> <td>13</td>
+    <td><i><strong>29</strong></i></td> <td><i><strong>10</strong></i></td> <td>14</td> <td>37</td> <td>13</td>
 </tr>
 <tr>
-    <td>10</td> <td>29</td> <td>14</td> <td>37</td> <td>13</td>
+    <td>10</td> <td><i><strong>29</strong></i></td> <td><i><strong>14</strong></i></td> <td>37</td> <td>13</td>
 </tr>
 <tr>
-    <td>10</td> <td>14</td> <td>29</td> <td>37</td> <td>13</td>
+    <td>10</td> <td>14</td> <td><i><strong>29</strong></i></td> <td><i><strong>37</strong></i></td> <td>13</td>
 </tr>
 <tr>
-    <td>10</td> <td>14</td> <td>29</td> <td>37</td> <td>13</td>
+    <td>10</td> <td>14</td> <td>29</td> <td><i><strong>37</strong></i></td> <td><i><strong>13</strong></i></td>
 </tr>
 <tr>
-    <td>10</td> <td>14</td> <td>29</td> <td>13</td> <td>37</td>
+    <td>10</td> <td>14</td> <td>29</td> <td>13</td> <td><strong>37</strong></td>
 </tr>
 </table>
+
+### Pass 2 - (place 2nd largest element in the correct position)
+<table>
+<tr>
+    <td><i><strong>10</strong></i></td> <td><i><strong>14</strong></i></td> <td>29</td> <td>13</td> <td><strong>37</strong></td>
+</tr>
+<tr>
+    <td>10</td> <td><i><strong>14</strong></i></td> <td><i><strong>29</strong></i></td> <td>13</td> <td><strong>37</strong></td>
+</tr>
+<tr>
+    <td>10</td> <td>14</td> <td><i><strong>29</strong></i></td> <td><i><strong>13</strong></i></td> <td><strong>37</strong></td>
+</tr>
+<tr>
+    <td>10</td> <td>14</td> <td>13</td> <td><strong>29</strong></td> <td><strong>37</strong></td>
+</tr>
+</table>
+
+### Continue passes until the array is sorted
 
 ## Implementation (C++)
 ```
