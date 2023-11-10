@@ -11,6 +11,27 @@
 - Small sequence
 - Nearly Sorted data
 - Special Situations where an adjacent swap is preferred (data stored on tape or in linked list)
+
+## Illustrated Passes
+### Pass 1
+<table>
+<tr>
+    <td><strong>29</strong></td> <td><strong>10</strong></td> <td>14</td> <td>37</td> <td>13</td>
+</tr>
+<tr>
+    <td>10</td> <td>29</td> <td>14</td> <td>37</td> <td>13</td>
+</tr>
+<tr>
+    <td>10</td> <td>14</td> <td>29</td> <td>37</td> <td>13</td>
+</tr>
+<tr>
+    <td>10</td> <td>14</td> <td>29</td> <td>37</td> <td>13</td>
+</tr>
+<tr>
+    <td>10</td> <td>14</td> <td>29</td> <td>13</td> <td>37</td>
+</tr>
+</table>
+
 ## Implementation (C++)
 ```
 template <class ItemType>
