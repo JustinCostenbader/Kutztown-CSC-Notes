@@ -19,9 +19,37 @@ Label one node as the root ➡️ rooted tree.
 ## General Tree and Binary Tree
 - General tree
   - No limit on the number of children
+ 
+```mermaid
+graph TD;
+A --> B
+A --> F
+A --> J
+B --> C
+B --> D
+B --> E
+F --> G
+F --> H
+J --> K
+J --> L
+J --> M
+J --> N
+M --> P
+M --> Q
+```
 - Binary tree
   - at most two children
   - left child and right child
+
+```mermaid
+graph TD;
+Jose --> Deepak
+Jose --> Qiang
+Deepak --> Anton
+Deepak --> Elisa
+Qiang --> Mia
+Qiang --> Zoe
+```
 
 ## Expression Tree
 Binary trees that represent algebraic expressions
