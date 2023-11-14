@@ -53,6 +53,30 @@ Qiang --> Zoe
 
 ## Expression Tree
 Binary trees that represent algebraic expressions
+<br>
+<br>
+**a - b**
+```mermaid
+graph TD;
+- --> a
+- --> b
+```
+**a - b / c**
+```mermaid
+graph TD;
+- --> a
+- --> /
+/ --> b
+/ --> c
+```
+**(a-b) x c**
+```mermaid
+graph TD;
+x --> -
+x --> c
+- --> a
+- --> b
+```
 
 ## Height of a Tree
 - The number of nodes on the longest path from root to a leaf
@@ -79,6 +103,21 @@ A complete binary tree is full up to height h-1, with height h filled in from le
   - Inorder: after it traverses left subtree, before it traverses right subtree
   - Postorder: after it traverses both subtrees
 - Time complexity: O(n)
+  
+```mermaid
+graph TD;
+60 --> 20
+60 --> 70
+20 --> 10
+20 --> 40
+40 --> 30
+40 --> 50
+```
+Preorder: 60, 20, 10, 40, 30, 50, 70
+<br>
+Inorder: 10, 20, 30, 40, 50, 60, 70
+<br>
+Postorder: 10, 30, 50, 40, 20, 70, 60
 
 ## Binary Search Tree (BST)
 - A binary tree with the additional condition: The value in each tree node is
