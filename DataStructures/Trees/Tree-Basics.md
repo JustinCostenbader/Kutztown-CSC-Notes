@@ -82,6 +82,9 @@ x --> c
 - The number of nodes on the longest path from root to a leaf
 - Maximum Height
   - The maximum possible height of a binary tree with n nodes is n
+- Ex: Binary trees with the same nodes but different heights
+
+![height](treeheight.png)
 
 
 ## Full Binary Trees
