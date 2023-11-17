@@ -12,4 +12,17 @@
 
  ## Stack Parameters
  - More convenient than register parameters
- - Two possible ways of calling DumpMem.
+ - Two possible ways of calling DumpMem. (DumpMem is an Irvine Library rountine for printing out data stored in memory)
+
+## Passing Arguments by Value
+- Push argument values on stack
+  - (Use only 32-bit values in protected mode to keep the stack aligned)
+- Call the called-procedure
+- Accept a return value in EAX, if any
+- Remove arguments from the stack if the called-procedure did not remove them
+
+## Passing by Reference
+- Push the offsets if arguments on the stack
+- Call the procedure
+- Accept a return value in EAX, if any
+- Remove arguments from the stack if the called procedure did not remove them
