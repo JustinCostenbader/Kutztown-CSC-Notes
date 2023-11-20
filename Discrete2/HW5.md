@@ -8,7 +8,23 @@
 
 ### 1. Use the definition of “ f(x) is O(g(x)) " to show that 2<sup>x</sup> + 17 is O(3<sup>x</sup>).
 
+Note that when x>=4 , 2<sup>x</sup> + 17 is < 3<sup>x</sup>
+<br>
+Thus, we can take C=1 and K=4
+<br>
+Then, 2<sup>x</sup> + 17 < 1 ⋅ 3<sup>x</sup> whenever x >= 4
+<br>
+Thus, 2<sup>x</sup> + 17 is O(3<sup>x</sup>)
+
 ### 2. Show that (x<sup>2</sup>+1)/(x+1) is O(x).
+
+Since 0 <= (x<sup>2</sup>+1)/(x+1) <= (x<sup>2</sup>+x)/(x) = x whenever x >= 1 , 
+<br>
+Take C=2 and K=1
+<br>
+Then, (x<sup>2</sup>+1)/(x+1) <= 2 ⋅ x whenever x >= 1
+<br>
+Thus, (x<sup>2</sup>+1)/(x+1) is O(x)
 
 ### 3. Use a merge sort to sort 4, 3, 2, 5, 1, 8, 7, 6 into increasing order. Show all the steps used by the algorithm.
 
