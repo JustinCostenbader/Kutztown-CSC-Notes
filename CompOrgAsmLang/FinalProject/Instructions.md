@@ -115,3 +115,63 @@ Returns (in eax):
 
 - updated file pointer (which has been advanced past the information just loaded)
 - If an unsuccessful load occurs, i.e. an error is encountered or a leading asterisk is not found, the carry flag should be set (and tested upon return)!
+
+<br>
+<br>
+
+*loadAllOlympians*:
+<br>
+This procedure should make successive calls to *loadOlypian* to read olympian information from a file into the array of *olympian* structs.
+<br>
+Loading should stop if *loadOlympian* fails to find valid olypian information in the file or if the maximum number of olympians, as provided by the user, has been loaded.
+<br>
+<br>
+Receives:
+   - pointer to the beginning of the struct array
+   - file pointer
+   - Maxmimum number of olympians to read
+<br>
+Returns (in eax):
+
+   - Number of Olympians read
+<br>
+
+*outputOlympian*:
+<br>
+This procedure outputs the contents of one olympian struct to the console in a well formatted manner. THe output should look like the example at the end of this document. It will be necessary to compute the olympian's total medal count, as this is not supplied as an input.
+<br>
+<br>
+Receives:
+
+   - pointer to the beginnning of a struct object
+<br>
+Returns:
+
+   - There is no return value
+
+<br>
+Note: strings for output formattting are supplied. <u>You may use the supplied output formatting strings as globals (you do NOT need to pass them in as parameters)</u>
+<br>
+<br>
+
+*outputAllOlympians*:
+<br>
+Output the entire array of Olympians to the console by successively calling outputOlympian.
+<br>
+<br>
+Receives:
+   - pointer to the first Olympian struct.
+   - Number of Olympians to output
+<br>
+Returns:
+
+   - There is no return value
+
+<br>
+
+**Do not do any looping in the main program!** The main program should only do the following: prompt for the number of olympians and a file name, and open and close the file. The remaining tasks should be accomplished by calls to allocOlympians, loadAllOlympians, and outputAllOlympian, which should, in turn, call the other procedures as needed.
+<br>
+<br>
+DO NOT use golbal variables/constants, except for the following:
+   - pre-defined symbolic constants (for example: FSIZE, ASTERICK, STRSIZE, ...)
+   - pre-defined output formatting strings (for example: outname, outclasss, & outmedals)
