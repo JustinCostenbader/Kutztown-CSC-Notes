@@ -175,3 +175,65 @@ Returns:
 DO NOT use golbal variables/constants, except for the following:
    - pre-defined symbolic constants (for example: FSIZE, ASTERICK, STRSIZE, ...)
    - pre-defined output formatting strings (for example: outname, outclasss, & outmedals)
+*some tips and suggestions*
+   - Build the program up in steps, one procedure at a time
+   - Test each procedure as you write it
+   - Use the debugging facilities available in Visual Studio
+      - Monitor values in the registers
+      - Monitor the input buffer by viewing the data stored in memory
+         - using memory dereferencing (with an ampersand) to access memory locations (Ex: &filename)
+      - Monitor the struct array by viewing the data stored in memory (&slistptr)
+   - Comment as you write!
+      - It makes it easier to keep track of what you've written
+    
+
+Grading will be based on the following criteria:
+1. Program must assemble
+2. Write and invoke ALL of the specified procedures as directed
+   - procedures should operate as described
+      - passing input and output information as directed
+      - perform calculations as described
+   - no looping in main
+   - use Irvine32 procedures for user input and output display
+3. Use stack frames to pass information to procedures
+   - With specified inputs and outputs
+   - Make use of a local variable, as directed
+   - Perform memory allocation using the heap, as directed
+   - No globals (except for output formatting strings mentioned above)
+4. Test thoroughly
+   - With files containing various numbers of Olympians
+   - Make sure loading stops at the specified number of olympians...
+   - ... or, when the end of the file has been encountered
+   - (halt execution before terminating - so output can be viewed)
+5. Use consistent formatting and comment liberally
+   - With easily readable indentation and code labeling
+   - Follow code formmating example in *readFileChar*!
+   - Provide a PROC header section describing information passed to/from the procedure and the registers use (again, look at readFileChar)
+
+```
+Example Output:
+
+Enter the number of olympians: 5
+Enter a filename: C:\Users\carelli\Desktop\olympians.txt
+
+Olympian: Michael Phelps
+Country: USA
+Medals: 28
+
+Olympian: Larisa Latynina
+Country: USSR
+Medals: 18
+
+Olympian: Paavo Nurmi
+Country: Finland
+Medals: 12
+
+Olympian: Mark Spitz
+Country: USA
+Medals: 11
+
+Olympian: Carl Lewis
+Country: USA
+Medals: 10
+Press any key to continue...
+```
