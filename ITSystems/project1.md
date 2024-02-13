@@ -49,8 +49,47 @@ Focusing on robust software solutions ensures that in the future the software wi
 
 
 ### Current Kutztown STEAMworks business procedure (Problem)
+
 Currently, to 3d print at the Kutztown University STEAMworks you must bring your 3d print file on a usb drive or send it attached in an email to the makerspace staff. 
-One issue is that not every student knows the name of the staffworkers and therefore, could not email them.
+One issue is that not every student knows the name of the staff-workers and therefore, can not email them.
 Another underlying issue is that even after bringing your 3d print file on a usb, the makerspace may not offer the color you want, the cost may be more than you expected to pay, or it may take longer to print then what you require.
 
 ### Proposed Kutztown STEAMworks business procedure (Problem Statement / Solution)
+
+My proposed business procedure is to implement within the library STEAMworks website an online 3D printing submission and tracking system.
+
+#### User Submission:
+* Students submit 3D print files through an online platform on the makerspace website.
+* Provide a user-friendly interface for file upload and additional options like color and infill choices.
+
+#### Review and Cost Estimation:
+* Makerspace staff reviews the submitted files and estimates the printing cost.
+* Staff communicates with users through the platform, offering different infill and color options along with associated costs.
+* Users receive detailed information on how long the print will take and the total cost.
+
+#### User Confirmation:
+* Users can accept or decline the proposed print, confirming their choice through the online platform.
+* If accepted, the system automatically deducts the corresponding funds from the user's Bear Bucks or Rohrbucks account.
+
+#### Real-time Progress Tracking:
+* Users can track the progress of their print in real-time through the website.
+* Receive notifications or updates at key milestones (e.g., started printing, completed).
+
+### Technical Skills, Timetable, and Resource Concerns:
+
+#### Technical Skills:
+* Web development for the submission and tracking platform.
+* Integration with the university's payment system for automatic fund deduction.
+  
+#### Timetable:
+* Development and testing: 4 months.
+* Pilot testing with a small group of users: 2 months.
+* Full implementation: 6 months.
+
+#### Resource Concerns:
+* Training sessions for staff and users on using the online system.
+* Ensure data security and privacy compliance.
+* Space on Kuztown servers.
+
+### Flow Diagram:
+
